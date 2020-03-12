@@ -30,7 +30,7 @@ export default {
     },
     toggleMute() {
         this.audio.muted = !this.audio.muted;
-        this.mute.innerText = this.audio.muted ? "volume_down" : "volume_up";
+        this.mute.innerText = this.audio.muted ? "volume_mute" : "volume_up";
         // ^ muda o ícone de áudio para mudo e vice-versa
     },
     next() {
