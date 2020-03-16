@@ -1,6 +1,6 @@
 ### pt-BR
 
-Fazendo um player com JavaScript
+Fazendo um audio player com JavaScript
 
 Para usar esse player corretamente, adicione as informações (título, descrição, capa e arquivo) no arquivo "data.js", deverá ser criada uma pasta "files" no diretório raiz, contendo os aúdios e imagens a serem usadas.
 
