@@ -21,8 +21,8 @@ export default {
     },
     actions() {
         this.audio.onended = () => this.next();
-        this.skip.onclick = () => this.next(); // botão próximo
-        this.previous.onclick = () => this.previous(); // botão anterior
+        this.skip.onclick = () => this.skipAudio(); // botão próximo
+        this.previous.onclick = () => this.previousAudio(); // botão anterior
         this.audio.ontimeupdate = () => this.timeUpdate();
         this.playPause.onclick = () => this.togglePlayPause();
         this.mute.onclick = () => this.toggleMute();

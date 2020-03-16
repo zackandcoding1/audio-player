@@ -39,7 +39,17 @@ export default {
         this.update();
         this.play();
     },
-    previous() { // botão para retornar aúdio (em construção)
+    skipAudio() { // botão para próximo aúdio
+        this.pause();
+        this.mute.innerText = "volume_up";
+        this.currentPlaying++;
+        if (this.currentPlaying == this.audioData.length) this.restart();
+        this.update();
+        this.play();
+    },
+    previousAudio() { // botão para retornar aúdio
+        this.pause();
+        this.mute.innerText = "volume_up";
         this.currentPlaying--;
         if (this.currentPlaying == this.audioData.length) this.restart();
         this.update();
