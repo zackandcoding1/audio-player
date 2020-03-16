@@ -43,7 +43,6 @@ export default {
         this.pause();
         this.mute.innerText = "volume_up";
         this.currentPlaying++;
-        if (this.currentPlaying == this.audioData.length) this.restart();
         this.update();
         this.play();
     },
@@ -51,7 +50,6 @@ export default {
         this.pause();
         this.mute.innerText = "volume_up";
         this.currentPlaying--;
-        if (this.currentPlaying == this.audioData.length) this.restart();
         this.update();
         this.play();
     },
